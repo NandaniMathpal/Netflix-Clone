@@ -1,1 +1,1 @@
-# Netflix-Clone
+A simple Netflix clone built using HTML and CSS, featuring a clean, responsive layout that mimics the look and feel of the original platform. It includes a homepage with a banner, navigation bar, and movie thumbnails for a realistic streaming site design.
