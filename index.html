@@ -4,6 +4,10 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Netflix India - Watch TV Shows Online, Watch Movies Online</title>
+    <link
+    href="https://cdn.jsdelivr.net/npm/remixicon@4.7.0/fonts/remixicon.css"
+    rel="stylesheet"
+/>
     <link rel="stylesheet" href="style.css">
 </head>
 <body>
@@ -20,11 +24,11 @@
 
         <div class="box"></div>
         <div class="hero">
-            <span class="hero-title">Enjoy big movies, hit series ans more from $149.</span>
+            <span class="hero-title">Enjoy big movies, hit series and more from $149.</span>
             <span class="hero-subtitle">Join today. Cancel anytime.</span>
             <span class="hero-desc">Ready to watch? Enter your email to create or resart your membership.</span>
 
-            <div>
+            <div class="email">
                 <input type="text" placeholder="Email Address">
                 <button class="btn red-btn">Get Started &gt;</button>
             </div>
@@ -90,40 +94,59 @@
      <div class="separation"></div>
 
     <section class="faq">
-        <h2>Frequently Asked Questions</h2>
-        <div class="faqbox">
-            <span>What is NetFlix</span>
-            <svg width="24" height="24" viewBox="0 0 24 24" fill="white" xmlns="http://www.w3.org/2000/svg">
-                <path d="M12 4V20" stroke="#141B34" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round" />
-                <path d="M4 12H20" stroke="#141B34" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round" />
-            </svg>
+    <h2>Frequently Asked Questions</h2>
 
+    <div class="faqbox">
+        <div class="question">
+            <span>What is Netflix ?</span>
+            <div class="icon">
+                <i class="ri-add-large-line icon"></i>
+            </div>
         </div>
-        <div class="faqbox">
-            <span>How much does Netflix cost?</span>
-            <svg width="24" height="24" viewBox="0 0 24 24" fill="white" xmlns="http://www.w3.org/2000/svg">
-                <path d="M12 4V20" stroke="#141B34" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round" />
-                <path d="M4 12H20" stroke="#141B34" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round" />
-            </svg>
+        
+        <p class="answer">
+            Netflix is a streaming service that offers a wide variety of TV shows, movies, anime and more — watch anytime, anywhere.
+        </p>
+    </div>
 
+    <div class="faqbox">
+        <div class="question">
+            <span>How much does Netflix cost ?</span>
+            <div class="icon">
+                <i class="ri-add-large-line icon"></i>
+            </div>
         </div>
-        <div class="faqbox">
-            <span>What can I watch on Netflix?</span>
-            <svg width="24" height="24" viewBox="0 0 24 24" fill="white" xmlns="http://www.w3.org/2000/svg">
-                <path d="M12 4V20" stroke="#141B34" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round" />
-                <path d="M4 12H20" stroke="#141B34" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round" />
-            </svg>
+        <p class="answer">
+            Plans start at ₹149 per month. Watch on your phone, tablet, laptop and TV.
+        </p>
+    </div>
 
+    <div class="faqbox">
+        <div class="question">
+            <span>What can I watch on Netflix ?</span>
+            <div class="icon">
+                <i class="ri-add-large-line icon"></i>
+            </div>
         </div>
-        <div class="faqbox">
-            <span>Where can I watch?</span>
-            <svg width="24" height="24" viewBox="0 0 24 24" fill="white" xmlns="http://www.w3.org/2000/svg">
-                <path d="M12 4V20" stroke="#141B34" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round" />
-                <path d="M4 12H20" stroke="#141B34" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round" />
-            </svg>
+        <p class="answer">
+            Netflix has a huge library including movies, web series, documentaries, anime and much more.
+        </p>
+    </div>
 
+    <div class="faqbox">
+        <div class="question">
+            <span>Where can I watch ?</span>
+            <div class="icon">
+                <i class="ri-add-large-line icon"></i>
+            </div>
         </div>
-    </section>
+        <p class="answer">
+            You can watch anywhere — phone, tablet, laptop, smart TVs or streaming devices.
+        </p>
+    </div>
+</section>
+
+
     <div class="separation"></div>
 
     <footer>
@@ -159,5 +182,8 @@
             </div>
         </div>
     </footer>
+
+    <script src="script.js"></script>
+
 </body>
 </html>
