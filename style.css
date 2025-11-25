@@ -5,15 +5,17 @@
     margin: 0;
     font-family: 'Poppins', sans-serif;
 }
-
+html{
+    scroll-behavior: smooth;
+}
 body{
     background-color: black;
 }
 .main{
-    background-image: url(assets/images/bg.jpg);
+    background-image: url('assets/images/bg.jpg');
     background-position: center center;
     background-repeat: no-repeat;
-    background-size: max(1200px 100vw);
+    background-size: max(1200px, 100vw);
     height: 70vh;   
     position: relative;
 }
@@ -59,26 +61,28 @@ nav button{
     font-family: 'Martel Sans', sans-serif;
     padding: 0 30px;
     gap: 23px;
+    max-width: 100%;
 }
 
-.hero :first-child(1){
-    font-weight: bolder;
+.hero-title {
     font-size: 90px;
+    font-weight: bold;
     text-align: center;
     font-family: 'Poppins', sans-serif;
 }
 
-.hero:nth-child(2){
+.hero-subtitle {
     font-weight: 400;
     font-size: 24px;
     text-align: center;
 }
 
-.hero:nth-child(3){
+.hero-desc {
     font-weight: 400;
     font-size: 20px;
     text-align: center;
 }
+
 
 .separation{
     height: 7px;
@@ -111,8 +115,9 @@ nav button{
 }
 
 .main input{
-    padding: 7px 101px 8px 14px;
+    padding: 10px;
     font-size: 12px;
+    width: 100%;
     color: white;
     border-radius: 4px;
     background-color: rgb(23,23,23,0.7);
@@ -122,11 +127,11 @@ nav button{
 .first{
     display: flex;
     justify-content: center;
-    max-width: 70vw;
+    max-width: 100%;
     margin: auto;
     color: white;
-    justify-content: center;
     align-items: center;
+    max-width: 100%;
 }
 
 .secimg{
@@ -174,7 +179,7 @@ section.first > div :nth-child(2){
     background-color: rgb(42, 41, 41);
     font-size: 24px;
     padding: 24px;
-    max-width: 60vw;
+    max-width: 100%;
     margin: 34px auto;
     justify-content: space-between;
     cursor: pointer;
@@ -212,4 +217,75 @@ footer .questions{
 .footer a{
     font-size: 14px;
     color: white;
+}
+
+
+/* Responsive Design for Smaller Screens */
+@media screen and (max-width: 768px) {
+    nav {
+        flex-direction: column;
+        align-items: flex-start;
+        padding: 0 20px;
+        height: auto;
+    }
+
+    nav img {
+        width: 100px;
+        margin-bottom: 10px;
+    }
+
+    .main {
+        background-size: cover;
+        height: auto;
+        padding-bottom: 40px;
+    }
+
+    .main .box {
+        height: 100%;
+    }
+
+    .hero {
+        height: auto;
+        padding: 40px 20px;
+    }
+
+    .hero-title {
+        font-size: 36px;
+    }
+
+    .hero-subtitle {
+        font-size: 18px;
+    }
+
+    .hero-desc {
+        font-size: 16px;
+    }
+
+    .main input {
+        padding: 10px;
+        font-size: 14px;
+        width: 100%;
+        box-sizing: border-box;
+    }
+
+    .first {
+        flex-direction: column;
+        text-align: center;
+    }
+
+    .secimg img,
+    .secimg video {
+        width: 100%;
+    }
+
+    .footer {
+        grid-template-columns: 1fr 1fr;
+        gap: 20px;
+    }
+
+    .faqbox {
+        font-size: 18px;
+        padding: 16px;
+        max-width: 90vw;
+    }
 }
